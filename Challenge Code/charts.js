@@ -135,9 +135,7 @@ function buildCharts(sample) {
     console.log(barData)
     // 9. Create the layout for the bar chart. 
     const barLayout = {
-      title: "WHALES",
-      xaxis: { title: "WHALES" },
-      yaxis: { title: "WHALES" }
+      title: "Top 10 Bacteria Cultures Found"
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout)
@@ -175,7 +173,7 @@ function buildCharts(sample) {
     const gaugeData = [{
       domain: { x: [0,1], y:[0,1] },
       value: result.wfreq,
-      title: { text: "WHALES" }, 
+      title: { text: "Belly Button Washing Frequency: <br> Scrubs per Week" }, 
       type: "indicator", 
       mode: "gauge+number",
       delta: { reference: 2}, 
